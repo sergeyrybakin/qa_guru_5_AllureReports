@@ -21,11 +21,6 @@ import static io.qameta.allure.Allure.parameter;
 import static io.qameta.allure.Allure.step;
 
 public class GitHubIssueSearchLambdaStyle extends TestBase {
-    private static final String BASE_URL = "https://github.com";
-    private static final String REPOSITORY = "selenide/selenide";
-    private static final String SEARCH_CRITERIA = "is:issue sergeyrybakin";
-    private static final String LINK = "Issues";
-    private static final String EXPECTED_RESULT = "Feature request: add Condition attributeContainsValue";
 
     @Test
     @Owner("sergeyrybakin")
@@ -33,7 +28,7 @@ public class GitHubIssueSearchLambdaStyle extends TestBase {
 
     @Feature(LINK)
     @Story("Поиск в репозитории " + REPOSITORY + " по критерию " + SEARCH_CRITERIA)
-    @DisplayName("Поиск в GitHub репозитории по запросу.")
+    @DisplayName("Lambda style: Поиск в GitHub репозитории по запросу.")
     public void issueSelenideSimpleSearch() {
         parameter("Repository: ", REPOSITORY);
         parameter("Search criteria: ", SEARCH_CRITERIA);

@@ -11,8 +11,8 @@ compileTestJava {
     options.encoding = "UTF-8"
 }
 
-sourceCompatibility = 8
-targetCompatibility = 8
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 allure {
     autoconfigure = true
@@ -26,6 +26,7 @@ allure {
 
 dependencies {
     compile("com.codeborne:selenide:5.18.0")
+    compile("io.qameta.allure:allure-java-commons:2.13.8")
 
     compile("org.junit.jupiter:junit-jupiter-api:5.7.0")
     compile("org.junit.jupiter:junit-jupiter-engine:5.7.0")

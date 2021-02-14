@@ -1,4 +1,4 @@
-package tests;
+package main;
 
 import io.qameta.allure.Step;
 
@@ -15,7 +15,6 @@ import static com.codeborne.selenide.Selenide.$$;
 public class BaseSteps {
     private static final String BASE_URL = "https://github.com";
     private static final String LINK = "Issues";
-
 
     @Step("Открыть страницу")
     public void openMainPage() {
